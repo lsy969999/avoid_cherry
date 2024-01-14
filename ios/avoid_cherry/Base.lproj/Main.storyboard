@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="avoid_cherry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avoid Cherry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usg-22-K7E">
+                                <rect key="frame" x="147.66666666666666" y="59" width="98" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BGH-at-iZf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfk-co-OrD">
+                                <rect key="frame" x="0.0" y="103" width="393" height="655"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hR8-5e-ZuC" userLabel="Metalv">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="655"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hR8-5e-ZuC" secondAttribute="trailing" id="765-DE-PoY"/>
+                                    <constraint firstItem="hR8-5e-ZuC" firstAttribute="top" secondItem="zfk-co-OrD" secondAttribute="top" id="Bhq-Be-HAB"/>
+                                    <constraint firstAttribute="bottom" secondItem="hR8-5e-ZuC" secondAttribute="bottom" id="Hbw-iQ-NVx"/>
+                                    <constraint firstItem="hR8-5e-ZuC" firstAttribute="leading" secondItem="zfk-co-OrD" secondAttribute="leading" id="KMQ-L7-Uhg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbE-6R-mOI">
+                                <rect key="frame" x="96.666666666666686" y="766" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Iak-ez-6go"/>
+                                    <constraint firstAttribute="width" constant="200" id="KSC-pu-JxA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Restart"/>
+                                <connections>
+                                    <action selector="recreateBevyApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gir-SP-Yag"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="usg-22-K7E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OZw-Md-Ofv"/>
+                            <constraint firstItem="zfk-co-OrD" firstAttribute="top" secondItem="usg-22-K7E" secondAttribute="bottom" id="ZZc-Ba-vy6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zfk-co-OrD" secondAttribute="bottom" constant="60" id="iJL-Xy-DI1"/>
+                            <constraint firstAttribute="trailing" secondItem="zfk-co-OrD" secondAttribute="trailing" id="kJW-Ay-cWj"/>
+                            <constraint firstItem="zfk-co-OrD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nFq-SW-I0o"/>
+                            <constraint firstItem="usg-22-K7E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ndb-vO-tle"/>
+                            <constraint firstItem="KbE-6R-mOI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pnI-0a-3yz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KbE-6R-mOI" secondAttribute="bottom" constant="8" id="wEc-Lc-OAh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="metalV" destination="hR8-5e-ZuC" id="80S-YX-HtP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
